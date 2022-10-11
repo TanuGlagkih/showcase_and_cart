@@ -31,23 +31,31 @@ const mainStore = createSlice({
         },
         addItemToCart(state, action) {
             state.cart.length ?
-                state.cart.map((item) => (item.id === action.payload.id) ? { ...item, number: ++item.number } : state.cart.push(action.payload))
-                :
-                state.cart.push(action.payload);
-
+                (
+                    state.cart.some((item) => (item.id === action.payload.id))
+                        ?
+                        state.cart.map((item) => (item.id === action.payload.id) ? { ...item, number: ++item.number } : item)
+                        :
+                        state.cart.push(action.payload)
+                ) : (
+                    state.cart.push(action.payload)
+                )
             state.sum = state.cart.reduce((a, b) => a + b.price * b.number, 0);
         },
         increaseNumber(state, action) {
-            state.headphones.map((item) => (item.id === action.payload.id) ? ++item.number : item);
+            state.cart.map((item) => (item.id === action.payload.id) ? { ...item, number: ++item.number } : item);
             state.sum = state.cart.reduce((a, b) => a + b.price * b.number, 0);
         },
         decreaseNumber(state, action) {
-            state.headphones.map((item) => (item.id === action.payload.id) ? --item.number : item);
+            state.cart.map((item) => (item.id === action.payload.id) ? { ...item, number: --item.number } : item);
             state.sum = state.cart.reduce((a, b) => a + b.price * b.number, 0);
         },
-
+        deleteItem(state, action) {
+            state.cart = state.cart.filter(item => item.id !== action.payload.id);
+            state.sum = state.cart.reduce((a, b) => a + b.price * b.number, 0);
+        },
     }
 })
 
 export default mainStore.reducer;
-export const { fillShowcase, addItemToCart, increaseNumber, decreaseNumber } = mainStore.actions;
+export const { fillShowcase, addItemToCart, increaseNumber, decreaseNumber, deleteItem } = mainStore.actions;

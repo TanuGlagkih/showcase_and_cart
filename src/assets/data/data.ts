@@ -1,6 +1,6 @@
 export const headphones = [
     {
-        img: '../../assets/data/pictures/Image3.png',
+        img: 'Image3.png',
         title: 'Apple BYZ S852I',
         id: '123',
         price: 2927,
@@ -9,7 +9,7 @@ export const headphones = [
         number: 0,
     },
     {
-        img: '../../assets/data/pictures/Image1.png',
+        img: 'Image1.png',
         title: 'Apple EarPods',
         id: '456',
         price: 2327,
@@ -18,7 +18,7 @@ export const headphones = [
         number: 0,
     },
     {
-        img: '../../assets/data/pictures/Image2.png',
+        img: 'Image2.png',
         title: 'Apple EarPods',
         id: '789',
         price: 2327,
@@ -27,7 +27,7 @@ export const headphones = [
         number: 0,
     },
     {
-        img: '../../assets/data/pictures/Image3.png',
+        img: 'Image3.png',
         title: 'Apple BYZ S852I',
         id: '098',
         price: 2927,
@@ -36,7 +36,7 @@ export const headphones = [
         number: 0,
     },
     {
-        img: '../../assets/data/pictures/Image1.png',
+        img: 'Image1.png',
         title: 'Apple EarPods',
         id: '765',
         price: 2327,
@@ -45,7 +45,7 @@ export const headphones = [
         number: 0,
     },
     {
-        img: '../../assets/data/pictures/Image2.png',
+        img: 'Image2.png',
         title: 'Apple EarPods',
         id: '432',
         price: 2327,
@@ -54,7 +54,7 @@ export const headphones = [
         number: 0,
     },
     {
-        img: '../../assets/data/pictures/Image4.png',
+        img: 'Image4.png',
         title: 'Apple AirPods',
         id: '109',
         price: 9527,
@@ -63,7 +63,7 @@ export const headphones = [
         number: 0,
     },
     {
-        img: '../../assets/data/pictures/Image5.png',
+        img: 'Image5.png',
         title: 'GERLAX GH-04',
         id: '864',
         price: 6527,
@@ -72,7 +72,7 @@ export const headphones = [
         number: 0,
     },
     {
-        img: '../../assets/data/pictures/Image6.png',
+        img: 'Image6.png',
         title: 'BOROFONE BO4',
         id: '753',
         price: 7527,

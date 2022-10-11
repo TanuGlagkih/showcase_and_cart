@@ -11,11 +11,15 @@ export default function Cart() {
         <main className={styles.container}>
             <section className={styles.itemBlock}>
                 <h2>Корзина</h2>
-                <div className={styles.itemBox}>
-                    {cart.map(item => (
-                        <CartItem item={item} key={item.id} />
-                    ))}
-                </div>
+                {!cart ?
+                    <></>
+                    :
+                    <div className={styles.itemBox}>
+                        {cart.map(item => (
+                            <CartItem item={item} key={item.id} />
+                        ))}
+                    </div>
+                }
             </section>
             <section className={styles.sumBlock}>
                 <div className={styles.sumBox}>

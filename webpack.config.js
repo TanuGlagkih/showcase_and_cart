@@ -7,6 +7,7 @@ module.exports = {
     devtool: 'inline-source-map',
     mode: 'development',
     devServer: {
+        historyApiFallback: true,
         static: {
             directory: path.join(__dirname, 'dist'),
         },

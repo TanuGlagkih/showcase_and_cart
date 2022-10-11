@@ -1,14 +1,15 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './footer.module.css';
 
 export default function Footer() {
 
     return (
         <footer className={styles.footer}>
-            <p className={styles.name}>QPICK</p>
+            <Link to="/" className={styles.name}>QPICK</Link>
             <section className={styles.box}>
                 <a className={styles.text}>Избранное</a>
-                <a className={styles.text}>Корзина</a>
+                <Link to="/cart" className={styles.text}>Корзина</Link>
                 <a className={styles.text}>Контакты</a>
             </section>
             <section className={styles.box}>
@@ -18,7 +19,7 @@ export default function Footer() {
                         src={require('../../assets/icons/globe.svg').default}
                         className={styles.globe} />
                     <a className={styles.text}>Каз</a>
-                    <a className={styles.text} href=''>Рус</a>
+                    <a className={styles.active} href=''>Рус</a>
                     <a className={styles.text}>Eng</a>
                 </div>
             </section>

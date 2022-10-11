@@ -21,6 +21,15 @@ h1 {
     line-height: 30px;
 }
 
+h1:hover {
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+}
+
 .icon {
     margin: 0px 20px 0px 20px;
 }

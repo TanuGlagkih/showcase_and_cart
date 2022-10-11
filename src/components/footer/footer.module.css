@@ -17,6 +17,11 @@
     font-weight: 600;
 }
 
+.name:any-link {
+    text-decoration: none;
+    color: #000;
+}
+
 .box {
     margin: 30px;
     display: flex;
@@ -50,6 +55,12 @@
 }
 
 .text:any-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.active {
+    margin: 0px 15px 15px 15px;
     text-decoration: underline;
     color: #FFA542;
     font-weight: bold;
@@ -59,8 +70,6 @@
     cursor: pointer;
     text-decoration: underline;
 }
-
-
 
 .icon:hover {
     cursor: pointer;

@@ -11,12 +11,13 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <h1>QPICK</h1>
+            <Link to="/" className={styles.logo}>
+                <h1 >QPICK</h1>
+            </Link>
             <section className={styles.container}>
                 <img
                     src={require('../../assets/icons/heart.svg').default}
                     className={styles.icon} />
-
                 <div className={styles.counter}>2</div>
                 <Link to="/cart">
                     <img
